@@ -1,0 +1,92 @@
+.editableOptions {
+    position: absolute;
+    top: -20px; right: 5px;
+}
+
+.editableBlock, .editableBlock .contentPane {
+    position: relative;
+    padding-bottom: 5px;
+}
+
+.editableBlock {
+    border: 1px solid transparent;
+    margin: 5px 0;
+}
+
+.editableBlock:hover {
+    border: 1px dashed #888;
+    cursor: pointer;
+}
+
+.editableBlock:hover .editableBtn {
+    background-color: cornflowerblue;
+}
+
+.editableBlock .editableBtn:hover {
+    background-color: royalblue;
+}
+
+.editableBtn {
+    margin-right: 5px;
+    background-color: #ccc;
+    color: white;
+    border-radius: 3px;
+    font-size: 0.8em;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 2px 5px;
+    cursor: pointer;
+}
+
+.editableBlock textarea {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    resize: none;
+    overflow: auto;
+}
+
+.blockOrderArrows {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40px;
+  height: 40px;
+}
+
+.blockOrderArrows .up, .blockOrderArrows .down {
+  width: 0; 
+  height: 0; 
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+}
+
+.blockOrderArrows .up {
+  border-bottom: 20px solid #f00;
+}
+
+.blockOrderArrows .down {
+  border-top: 20px solid #f00;
+  margin-top: 2px;
+}
+
+.blockOrderArrows div:hover {
+  opacity: 0.5;
+}
+
+.blockDeleteX {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 2.5em;
+  width: 30px;
+  text-align: center;
+  color: #999;
+}
+
+.blockDeleteX:hover {
+  color: #000;
+}
